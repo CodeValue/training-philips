@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SYNTHETIC DATA ONLY. No real patients. -->
+<Studies>
+  <Study Id="SYN-0001" PatientId="P-1001" PatientName="Test Patient 01" BirthYear="1968" Date="2026-01-12" Modality="CT" SliceThicknessMm="1.0">
+    <Organ Name="Liver" />
+    <Metric Name="MeanHu" Value="55" />
+  </Study>
+  <Study Id="SYN-0002" PatientId="P-1002" PatientName="Test Patient 02" BirthYear="1975" Date="2026-02-03" Modality="CT" SliceThicknessMm="1.25">
+    <Organ Name="Kidney" />
+    <Metric Name="LengthMm" Value="110" />
+    <Metric Name="WidthMm" Value="50" />
+    <Metric Name="DepthMm" Value="45" />
+  </Study>
+  <Study Id="SYN-0003" PatientId="P-1003" PatientName="Test Patient 03" BirthYear="1959" Date="2026-02-20" Modality="MR" SliceThicknessMm="8.0">
+    <Organ Name="Heart" />
+    <Metric Name="EdvMl" Value="120" />
+    <Metric Name="EsvMl" Value="48" />
+  </Study>
+  <Study Id="SYN-0004" PatientId="P-1004" PatientName="Test Patient 04" BirthYear="1981" Date="2026-03-08" Modality="CT" SliceThicknessMm="1.0">
+    <Organ Name="Lung" />
+    <Metric Name="Nodule1Mm" Value="4" />
+    <Metric Name="Nodule2Mm" Value="7" />
+  </Study>
+  <Study Id="SYN-0005" PatientId="P-1005" PatientName="Test Patient 05" BirthYear="1963" Date="2026-03-21" Modality="CT" SliceThicknessMm="5.0">
+    <Organ Name="Liver" />
+    <Organ Name="Kidney" />
+    <Metric Name="MeanHu" Value="32" />
+    <Metric Name="LengthMm" Value="130" />
+    <Metric Name="WidthMm" Value="60" />
+    <Metric Name="DepthMm" Value="55" />
+  </Study>
+  <Study Id="SYN-0006" PatientId="P-1006" PatientName="Test Patient 06" BirthYear="1950" Date="2026-04-02" Modality="MR" SliceThicknessMm="6.0">
+    <Organ Name="Heart" />
+    <Metric Name="EdvMl" Value="150" />
+    <Metric Name="EsvMl" Value="90" />
+  </Study>
+  <Study Id="SYN-0007" PatientId="P-1007" PatientName="Test Patient 07" BirthYear="1972" Date="2026-04-15" Modality="CT" SliceThicknessMm="5.0">
+    <Organ Name="Lung" />
+    <Metric Name="Nodule1Mm" Value="3" />
+    <Metric Name="Nodule2Mm" Value="6" />
+    <Metric Name="Nodule3Mm" Value="9" />
+  </Study>
+  <Study Id="SYN-0008" PatientId="P-1008" PatientName="Test Patient 08" BirthYear="1988" Date="2026-05-01" Modality="CT" SliceThicknessMm="2.0">
+    <Organ Name="Kidney" />
+    <Metric Name="LengthMm" Value="95" />
+    <Metric Name="WidthMm" Value="45" />
+    <Metric Name="DepthMm" Value="40" />
+  </Study>
+  <Study Id="SYN-0009" PatientId="P-1009" PatientName="Test Patient 09" BirthYear="1979" Date="2026-05-14" Modality="CT" SliceThicknessMm="2.0">
+    <Organ Name="Spleen" />
+    <Metric Name="LengthMm" Value="120" />
+    <Metric Name="WidthMm" Value="70" />
+    <Metric Name="ThicknessMm" Value="45" />
+  </Study>
+</Studies>

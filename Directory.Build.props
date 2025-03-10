@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <Company>OrganLens (synthetic training app)</Company>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+</Project>
