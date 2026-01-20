@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Legacy", "Legacy", "{6F1C2A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E03}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E02}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganLens.Analysis", "src\OrganLens.Analysis\OrganLens.Analysis.csproj", "{A1B2C3D4-0001-4A00-8000-000000000001}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganLens.Legacy.Core", "src\OrganLens.Legacy.Core\OrganLens.Legacy.Core.csproj", "{A1B2C3D4-0002-4A00-8000-000000000002}"
@@ -16,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganLens.Legacy.WinForms", "src\OrganLens.Legacy.WinForms\OrganLens.Legacy.WinForms.csproj", "{A1B2C3D4-0004-4A00-8000-000000000004}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganLens.Legacy.Core.Tests", "src\OrganLens.Legacy.Core.Tests\OrganLens.Legacy.Core.Tests.csproj", "{A1B2C3D4-0005-4A00-8000-000000000005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganLens.Api", "src\OrganLens.Api\OrganLens.Api.csproj", "{A1B2C3D4-0006-4A00-8000-000000000006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganLens.Api.Tests", "src\OrganLens.Api.Tests\OrganLens.Api.Tests.csproj", "{A1B2C3D4-0007-4A00-8000-000000000007}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +49,14 @@ Global
 		{A1B2C3D4-0005-4A00-8000-000000000005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B2C3D4-0005-4A00-8000-000000000005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B2C3D4-0005-4A00-8000-000000000005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0006-4A00-8000-000000000006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0006-4A00-8000-000000000006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0006-4A00-8000-000000000006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0006-4A00-8000-000000000006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-0007-4A00-8000-000000000007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-0007-4A00-8000-000000000007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-0007-4A00-8000-000000000007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-0007-4A00-8000-000000000007}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +67,8 @@ Global
 		{A1B2C3D4-0003-4A00-8000-000000000003} = {6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E01}
 		{A1B2C3D4-0004-4A00-8000-000000000004} = {6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E01}
 		{A1B2C3D4-0005-4A00-8000-000000000005} = {6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E01}
+		{A1B2C3D4-0006-4A00-8000-000000000006} = {6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E02}
+		{A1B2C3D4-0007-4A00-8000-000000000007} = {6F1C2A10-4B7E-4F0A-9C3D-1A2B3C4D5E02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0FFEE00-1234-4ABC-9DEF-0123456789AB}
