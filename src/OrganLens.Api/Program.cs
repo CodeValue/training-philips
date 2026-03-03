@@ -11,6 +11,7 @@ builder.Services.AddSingleton<IStudyStore>(_ => new InMemoryStudyStore(SeedData.
 builder.Services.AddSingleton(AnalyzerRegistry.CreateDefault());
 builder.Services.AddScoped<StudyService>();
 builder.Services.AddScoped<AnalysisService>();
+builder.Services.AddScoped<MeasurementService>();
 
 var app = builder.Build();
 

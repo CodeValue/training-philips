@@ -1,0 +1,47 @@
+# Sample requests. Open in VS Code (REST Client extension) or Visual Studio and click "Send Request".
+@host = http://localhost:5080
+
+### Health
+GET {{host}}/api/health
+
+### List studies
+GET {{host}}/api/studies
+
+### One study
+GET {{host}}/api/studies/SYN-0002
+
+### Unknown study (404)
+GET {{host}}/api/studies/SYN-9999
+
+### Analyze kidney
+POST {{host}}/api/studies/SYN-0002/analysis
+Content-Type: application/json
+
+{ "organ": "Kidney" }
+
+### Analyze heart
+POST {{host}}/api/studies/SYN-0003/analysis
+Content-Type: application/json
+
+{ "organ": "Heart" }
+
+### Analyze an organ the web app doesn't support
+POST {{host}}/api/studies/SYN-0002/analysis
+Content-Type: application/json
+
+{ "organ": "Spleen" }
+
+### List manual measurements
+GET {{host}}/api/studies/SYN-0002/measurements
+
+### Add a manual measurement
+POST {{host}}/api/studies/SYN-0002/measurements
+Content-Type: application/json
+
+{
+  "organ": "Kidney",
+  "kind": "Length",
+  "value": 110,
+  "unit": "mm",
+  "sliceThicknessMm": 1.25
+}
