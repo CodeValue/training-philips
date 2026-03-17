@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OrganLens Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>OrganLens <span class="tag">web preview</span></h1>
+    <p class="note">Synthetic data only.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Studies</h2>
+      <table id="study-list">
+        <thead>
+          <tr>
+            <th>Study</th>
+            <th>Patient ref</th>
+            <th>Modality</th>
+            <th>Date</th>
+            <th>Organs</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="panel hidden" id="study-detail">
+      <h2 id="detail-title"></h2>
+      <p id="detail-meta" class="note"></p>
+
+      <h3>Analyze</h3>
+      <div id="analyze-buttons"></div>
+      <div id="analysis-result" data-testid="analysis-result" class="hidden"></div>
+
+      <h3>Manual measurements</h3>
+      <table data-testid="measurement-list" id="measurement-list">
+        <thead>
+          <tr><th>Organ</th><th>Kind</th><th>Value</th><th>Unit</th><th>Slice (mm)</th><th>Slices</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <form data-testid="measurement-form" id="measurement-form">
+        <label>Organ
+          <select name="organ">
+            <option>Liver</option>
+            <option>Kidney</option>
+            <option>Lung</option>
+            <option>Heart</option>
+          </select>
+        </label>
+        <label>Kind <input name="kind" placeholder="e.g. Length" /></label>
+        <label>Value <input name="value" type="number" step="any" /></label>
+        <label>Unit <input name="unit" placeholder="e.g. mm" /></label>
+        <label>Slice thickness (mm) <input name="sliceThicknessMm" type="number" step="any" /></label>
+        <button type="submit">Add measurement</button>
+      </form>
+      <div data-testid="error-banner" id="error-banner" class="error hidden">Something went wrong</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
