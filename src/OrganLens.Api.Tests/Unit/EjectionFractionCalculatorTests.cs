@@ -6,11 +6,11 @@ namespace OrganLens.Api.Tests.Unit;
 public class EjectionFractionCalculatorTests
 {
     [Theory]
-    [InlineData(120, 48, 60.0)]
-    [InlineData(150, 90, 40.0)]
-    public void Calculate_ReturnsPercent(double edv, double esv, double expected)
+    [InlineData(120, 48, 0.6)]
+    [InlineData(150, 90, 0.4)]
+    public void Calculate_ReturnsFraction(double edv, double esv, double expected)
     {
-        Assert.Equal(expected, EjectionFractionCalculator.Calculate(edv, esv), 1);
+        Assert.Equal(expected, EjectionFractionCalculator.Calculate(edv, esv), 3);
     }
 
     [Fact]

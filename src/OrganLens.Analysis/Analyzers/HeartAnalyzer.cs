@@ -4,7 +4,7 @@ namespace OrganLens.Analysis.Analyzers
 {
     public class HeartAnalyzer : IOrganAnalyzer
     {
-        public const double LowEjectionFractionPercent = 50.0;
+        public const double LowEjectionFraction = 0.5;
 
         public Organ Organ
         {
@@ -21,7 +21,7 @@ namespace OrganLens.Analysis.Analyzers
             var ef = EjectionFractionCalculator.Calculate(edv, esv);
             result.Measurements.Add(new Measurement("EjectionFraction", ef, "%"));
 
-            if (ef < LowEjectionFractionPercent)
+            if (ef < LowEjectionFraction)
             {
                 result.Findings.Add(new Finding
                 {
