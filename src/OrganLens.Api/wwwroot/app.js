@@ -30,7 +30,9 @@
   // ---------------------------------------------------------------- list
 
   async function loadStudies() {
-    var response = await fetch('/api/studies');
+    var organ = $('#organ-filter').value;
+    var url = organ ? '/api/studies?organ=' + organ : '/api/studies';
+    var response = await fetch(url);
     var studies = await response.json();
     var body = $('#study-list tbody');
     body.innerHTML = '';
@@ -173,6 +175,7 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     $('#measurement-form').addEventListener('submit', submitMeasurement);
+    $('#organ-filter').addEventListener('change', loadStudies);
     loadStudies();
   });
 })();

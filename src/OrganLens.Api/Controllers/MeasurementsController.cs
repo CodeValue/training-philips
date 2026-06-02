@@ -21,7 +21,7 @@ public class MeasurementsController : ControllerBase
     [HttpGet]
     public ActionResult<IReadOnlyList<MeasurementDto>> Get(string id)
     {
-        var study = _store.GetById(id);
+        var study = _store.FetchStudyById(id);
         if (study == null)
         {
             return Problem(statusCode: StatusCodes.Status404NotFound, title: "Study not found", detail: $"No study with id '{id}'.");
@@ -33,7 +33,7 @@ public class MeasurementsController : ControllerBase
     [HttpPost]
     public ActionResult<MeasurementDto> Add(string id, [FromBody] MeasurementRequest request)
     {
-        var study = _store.GetById(id);
+        var study = _store.FetchStudyById(id);
         if (study == null)
         {
             return Problem(statusCode: StatusCodes.Status404NotFound, title: "Study not found", detail: $"No study with id '{id}'.");

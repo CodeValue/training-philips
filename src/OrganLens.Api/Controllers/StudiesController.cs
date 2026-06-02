@@ -16,9 +16,9 @@ public class StudiesController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<List<StudySummaryDto>> GetAll()
+    public ActionResult<List<StudySummaryDto>> GetAll([FromQuery] string organ = null)
     {
-        return Ok(_studyService.GetAll());
+        return Ok(_studyService.GetAll(organ));
     }
 
     [HttpGet("{id}")]

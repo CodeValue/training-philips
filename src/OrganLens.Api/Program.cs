@@ -1,10 +1,17 @@
+using System.Text.Json.Serialization;
 using OrganLens.Analysis;
 using OrganLens.Api.Data;
 using OrganLens.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // cleaner payloads
+        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    });
+builder.Services.AddMemoryCache();
 builder.Services.AddProblemDetails();
 
 builder.Services.AddSingleton<IStudyStore>(_ => new InMemoryStudyStore(SeedData.Create()));

@@ -5,10 +5,10 @@ namespace OrganLens.Api.Data;
 
 public interface IStudyStore
 {
-    IReadOnlyList<StudyEntity> GetAll();
+    IReadOnlyList<StudyEntity> FetchAllStudies();
 
     /// <returns>The study, or null when it does not exist.</returns>
-    StudyEntity GetById(string id);
+    StudyEntity FetchStudyById(string id);
 
     MeasurementDto AddMeasurement(string studyId, MeasurementDto measurement);
 

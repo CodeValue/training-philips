@@ -1,3 +1,5 @@
+using System.Linq.Dynamic.Core;
+using Microsoft.Extensions.Caching.Memory;
 using OrganLens.Api.Data;
 using OrganLens.Api.Models;
 
@@ -6,21 +8,42 @@ namespace OrganLens.Api.Services;
 public class StudyService
 {
     private readonly IStudyStore _store;
+    private readonly IMemoryCache _cache;
 
-    public StudyService(IStudyStore store)
+    public StudyService(IStudyStore store, IMemoryCache cache)
     {
         _store = store;
+        _cache = cache;
     }
 
-    public List<StudySummaryDto> GetAll()
+    /// <summary>
+    /// Returns all studies, optionally filtered by organ. Results are cached for performance.
+    /// </summary>
+    public List<StudySummaryDto> GetAll(string organ = null)
     {
-        return _store.GetAll().Select(ToSummary).ToList();
+        var cacheKey = "studies:" + (organ ?? "all");
+        if (_cache.TryGetValue(cacheKey, out List<StudySummaryDto> cached))
+        {
+            return cached;
+        }
+
+        var query = _store.FetchAllStudies().Select(ToSummary).AsQueryable();
+
+        if (!string.IsNullOrEmpty(organ))
+        {
+            // flexible dynamic filtering - supports any organ without code changes
+            query = query.Where("Organs.Contains(\"" + organ + "\")");
+        }
+
+        var result = query.ToList();
+        _cache.Set(cacheKey, result, TimeSpan.FromMinutes(10));
+        return result;
     }
 
     /// <returns>The study, or null when it does not exist.</returns>
     public StudyDetailDto GetById(string id)
     {
-        var study = _store.GetById(id);
+        var study = _store.FetchStudyById(id);
         if (study == null)
         {
             return null;
@@ -50,6 +73,7 @@ public class StudyService
     {
         dto.Id = study.Id;
         dto.PatientRef = study.PatientRef;
+        dto.PatientName = study.PatientName;
         dto.Modality = study.Modality;
         dto.StudyDate = study.StudyDate.ToString("yyyy-MM-dd");
         dto.Organs = study.Series.Select(s => s.Organ.ToString()).Distinct().ToArray();

@@ -7,6 +7,9 @@ public class StudySummaryDto
     /// <summary>Pseudonymous patient reference. Never the patient's name.</summary>
     public string PatientRef { get; set; }
 
+    /// <summary>Patient display name, for convenience in the UI.</summary>
+    public string PatientName { get; set; }
+
     public string Modality { get; set; }
 
     /// <summary>yyyy-MM-dd</summary>

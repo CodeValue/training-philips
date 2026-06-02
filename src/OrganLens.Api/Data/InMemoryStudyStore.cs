@@ -14,7 +14,7 @@ public class InMemoryStudyStore : IStudyStore
         _studies = seed.ToList();
     }
 
-    public IReadOnlyList<StudyEntity> GetAll()
+    public IReadOnlyList<StudyEntity> FetchAllStudies()
     {
         lock (_lock)
         {
@@ -22,7 +22,7 @@ public class InMemoryStudyStore : IStudyStore
         }
     }
 
-    public StudyEntity GetById(string id)
+    public StudyEntity FetchStudyById(string id)
     {
         lock (_lock)
         {

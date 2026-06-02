@@ -22,7 +22,7 @@ public class AnalysisController : ControllerBase
     [HttpPost]
     public ActionResult<AnalysisResultDto> Analyze(string id, [FromBody] AnalysisRequest request)
     {
-        var study = _store.GetById(id);
+        var study = _store.FetchStudyById(id);
         if (study == null)
         {
             return Problem(statusCode: StatusCodes.Status404NotFound, title: "Study not found", detail: $"No study with id '{id}'.");
