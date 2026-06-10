@@ -12,6 +12,7 @@ builder.Services.AddSingleton(AnalyzerRegistry.CreateDefault());
 builder.Services.AddScoped<StudyService>();
 builder.Services.AddScoped<AnalysisService>();
 builder.Services.AddScoped<MeasurementService>();
+builder.Services.AddScoped<ExportService>();
 
 var app = builder.Build();
 
