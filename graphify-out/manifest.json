@@ -1,0 +1,458 @@
+{
+  "OrganLens.sln": {
+    "mtime": 1793879406.3187816,
+    "seen": 1793879411.6142786,
+    "ast_hash": "839b596f8c0fe4099445160f493057be",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/AnalysisResult.cs": {
+    "mtime": 1793879406.3203807,
+    "seen": 1793879411.6142864,
+    "ast_hash": "969e031278476cb2a42cfa0281881016",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/AnalyzerRegistry.cs": {
+    "mtime": 1793879406.3204355,
+    "seen": 1793879411.6142895,
+    "ast_hash": "a80b06f6f0695d85bffcc52d2bec09a6",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Analyzers/AnalyzerHelpers.cs": {
+    "mtime": 1793879406.3204355,
+    "seen": 1793879411.6142912,
+    "ast_hash": "a8e018c031fa677ec4e8b10791605a4b",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Analyzers/HeartAnalyzer.cs": {
+    "mtime": 1793879406.3205628,
+    "seen": 1793879411.6142924,
+    "ast_hash": "8c95368313cf1f4f40763042f8735b8e",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Analyzers/KidneyAnalyzer.cs": {
+    "mtime": 1793879406.3205628,
+    "seen": 1793879411.6142938,
+    "ast_hash": "15843acf58d76c92cca9ed0568f09ee2",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Analyzers/LiverAnalyzer.cs": {
+    "mtime": 1793879406.3205628,
+    "seen": 1793879411.6142948,
+    "ast_hash": "92d2b8bebf75dce4fbc481d09a156925",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Analyzers/LungAnalyzer.cs": {
+    "mtime": 1793879406.3205628,
+    "seen": 1793879411.6142957,
+    "ast_hash": "5ff2f858ef9e6204aef5fe1ad0965ab4",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Calculators/EjectionFractionCalculator.cs": {
+    "mtime": 1793879406.3205628,
+    "seen": 1793879411.614297,
+    "ast_hash": "718f7cf9fc8da8614fb042ab5eb52a2f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Calculators/KidneyVolumeCalculator.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6142979,
+    "ast_hash": "6e18792172a7d3b86d24f93e1a43c154",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Calculators/LiverDensityCalculator.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6142988,
+    "ast_hash": "76c302bbba95b1e06cfdff7e3066b157",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/ConfidenceModel.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143003,
+    "ast_hash": "deecdebfc59208edfce0875f6b53a3a1",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Finding.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143012,
+    "ast_hash": "eb3662d55705abad277497a7df50c488",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/IOrganAnalyzer.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143022,
+    "ast_hash": "b0a07e4e242fd1eb81f8eeba87ebf87b",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/ImageFrame.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143034,
+    "ast_hash": "3d3f816dd3c5b8bcf2b62e49acc6b08e",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/ImageSeries.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143043,
+    "ast_hash": "0b57c07760b4ff42fa71337a4d5add54",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Measurement.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143053,
+    "ast_hash": "008866777ce598ecea35886c2889889c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/Organ.cs": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143062,
+    "ast_hash": "7bf5a1a5b1ea7df2c61333b865cc72f2",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Analysis/OrganLens.Analysis.csproj": {
+    "mtime": 1793879406.3207407,
+    "seen": 1793879411.6143074,
+    "ast_hash": "fcbe58f6388be4b712e9395f4925f0ea",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/Integration/AnalysisEndpointTests.cs": {
+    "mtime": 1793879406.3210638,
+    "seen": 1793879411.6143084,
+    "ast_hash": "6b4db5577d2bb5a9ceea74c1098309cc",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/Integration/ApiFactory.cs": {
+    "mtime": 1793879406.321139,
+    "seen": 1793879411.6143093,
+    "ast_hash": "c89dd6ff47fd6192770f338e1b626a13",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/Integration/StudiesEndpointTests.cs": {
+    "mtime": 1793879406.321139,
+    "seen": 1793879411.6143105,
+    "ast_hash": "ea756153ffff1825c490481c80c59d0c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/OrganLens.Api.Tests.csproj": {
+    "mtime": 1793879406.321139,
+    "seen": 1793879411.6143117,
+    "ast_hash": "e2e2410469edfa9af14d581f4525353f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/Unit/ConfidenceModelTests.cs": {
+    "mtime": 1793879406.321139,
+    "seen": 1793879411.614313,
+    "ast_hash": "e146b090f45045dc39b37533c2846bbc",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/Unit/EjectionFractionCalculatorTests.cs": {
+    "mtime": 1793879406.3212736,
+    "seen": 1793879411.614314,
+    "ast_hash": "f2421550e5e9d18855ab2755f0cfd99f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api.Tests/Unit/KidneyVolumeCalculatorTests.cs": {
+    "mtime": 1793879406.3212736,
+    "seen": 1793879411.614315,
+    "ast_hash": "abf831e5389c4b852f068b7a254bb115",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Controllers/AnalysisController.cs": {
+    "mtime": 1793879406.3213558,
+    "seen": 1793879411.614316,
+    "ast_hash": "c96e2a700707923d13620f6d77c4e8f5",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Controllers/HealthController.cs": {
+    "mtime": 1793879406.3214145,
+    "seen": 1793879411.614317,
+    "ast_hash": "f71d8d672c0f974e8b68d640bec7dbe9",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Controllers/MeasurementsController.cs": {
+    "mtime": 1793879406.3214145,
+    "seen": 1793879411.6143181,
+    "ast_hash": "8eb8af5cb6684543972fdce4e8a96243",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Controllers/StudiesController.cs": {
+    "mtime": 1793879406.3214145,
+    "seen": 1793879411.614319,
+    "ast_hash": "47866b1e6a35e1c0481e3ce7016da4ae",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Data/IStudyStore.cs": {
+    "mtime": 1793879406.3214145,
+    "seen": 1793879411.61432,
+    "ast_hash": "5e201716cf7b5a3e42e98f81a98abe0c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Data/InMemoryStudyStore.cs": {
+    "mtime": 1793879406.321673,
+    "seen": 1793879411.6143212,
+    "ast_hash": "30b175690902d08bae8bdcaafa43617f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Data/SeedData.cs": {
+    "mtime": 1793879406.321673,
+    "seen": 1793879411.6143222,
+    "ast_hash": "4ae6f563d223c1f2d136f8284de017a1",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Data/StudyEntity.cs": {
+    "mtime": 1793879406.321673,
+    "seen": 1793879411.6143231,
+    "ast_hash": "85a7874088c0cb692c8ab2e58e4e63cb",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Models/AnalysisRequest.cs": {
+    "mtime": 1793879406.321673,
+    "seen": 1793879411.6143243,
+    "ast_hash": "0bb51db3fa2741d80eac14f68ef1d84e",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Models/AnalysisResultDto.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.614325,
+    "ast_hash": "9f796ded5c83244ee04dca788379c9a8",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Models/MeasurementDto.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.614326,
+    "ast_hash": "4142d4d2d2e8935041c0a6dc3299e94b",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Models/MeasurementRequest.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.614327,
+    "ast_hash": "01f415ae1cbf26986a242db78b8d5faf",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Models/StudyDetailDto.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.6143281,
+    "ast_hash": "8b40c964992d7b82149c1e543ae472fe",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Models/StudySummaryDto.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.614329,
+    "ast_hash": "061436893dd6cdbce5d59c8ab72c4422",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/OrganLens.Api.csproj": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.61433,
+    "ast_hash": "34184644938628f0b655d49a99d20e3e",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Program.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.6143308,
+    "ast_hash": "6cd1e66eb26a878f30a67e7c2a81825d",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Properties/launchSettings.json": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.6143322,
+    "ast_hash": "50218256a03c729507b74830d9025c1c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Services/AnalysisService.cs": {
+    "mtime": 1793879406.3218198,
+    "seen": 1793879411.6143353,
+    "ast_hash": "f90e4fcb6f3fead7d9bf828ddf67eafe",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Services/MeasurementService.cs": {
+    "mtime": 1793879406.3221714,
+    "seen": 1793879411.6143363,
+    "ast_hash": "4c504c8597784760131969c1b6d75fb8",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/Services/StudyService.cs": {
+    "mtime": 1793879406.3221714,
+    "seen": 1793879411.6143372,
+    "ast_hash": "711801e857fd2a6704e0be989808ceb3",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/appsettings.Development.json": {
+    "mtime": 1793879406.3221714,
+    "seen": 1793879411.6143384,
+    "ast_hash": "477a525a47fc9bdbbf94690e6633d843",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/appsettings.json": {
+    "mtime": 1793879406.3221714,
+    "seen": 1793879411.6143394,
+    "ast_hash": "e0d8b64695b3d9da987f05343c42b027",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/wwwroot/app.js": {
+    "mtime": 1793879406.3221714,
+    "seen": 1793879411.6143403,
+    "ast_hash": "a2323204655bcf80cadc9e74ce51fe0f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core.Tests/OrganLens.Legacy.Core.Tests.csproj": {
+    "mtime": 1793879406.3223798,
+    "seen": 1793879411.6143413,
+    "ast_hash": "bdde0edc5b198d6325c0aef98888dc21",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core.Tests/StudyManagerTests.cs": {
+    "mtime": 1793879406.3225403,
+    "seen": 1793879411.6143425,
+    "ast_hash": "5fc674661e1693f9deac038ba22707e8",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core/OrganLens.Legacy.Core.csproj": {
+    "mtime": 1793879406.3225403,
+    "seen": 1793879411.6143434,
+    "ast_hash": "77fd1d4000c4674fe08039415936176f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core/PatientInfo.cs": {
+    "mtime": 1793879406.322624,
+    "seen": 1793879411.6143444,
+    "ast_hash": "f125cf94d18e74d97eb3a341d0b62f28",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core/ReportBuilder.cs": {
+    "mtime": 1793879406.322624,
+    "seen": 1793879411.6143456,
+    "ast_hash": "692d1b397a7eecac0109c129cfe27725",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core/StudyManager.cs": {
+    "mtime": 1793879406.322624,
+    "seen": 1793879411.6143465,
+    "ast_hash": "701a76d870ed9e8f13e140294d4367df",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core/StudyRecord.cs": {
+    "mtime": 1793879406.322624,
+    "seen": 1793879411.6143477,
+    "ast_hash": "07158fe4c3fdd2585babae8104e2c90c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Core/Utils/MathHelper.cs": {
+    "mtime": 1793879406.322624,
+    "seen": 1793879411.614349,
+    "ast_hash": "c7489361f6adc87004d3894b4abea9d5",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Data/DbHelper.cs": {
+    "mtime": 1793879406.322624,
+    "seen": 1793879411.6143498,
+    "ast_hash": "d28b214b2ff489715badcdff0bb616c4",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Data/IStudyRepository.cs": {
+    "mtime": 1793879406.3228734,
+    "seen": 1793879411.6143508,
+    "ast_hash": "5a21ac9435424011b7887ba3c700f8f1",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Data/OrganLens.Legacy.Data.csproj": {
+    "mtime": 1793879406.3228734,
+    "seen": 1793879411.614352,
+    "ast_hash": "8508e7dec77926dcbf728421d6a04e8d",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Data/SqlStudyRepository.cs": {
+    "mtime": 1793879406.3228734,
+    "seen": 1793879411.614353,
+    "ast_hash": "4babf756d4425b60c42ea2fc668ed297",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.Data/XmlStudyRepository.cs": {
+    "mtime": 1793879406.3228734,
+    "seen": 1793879411.6143537,
+    "ast_hash": "1b53cc6d6f845649d9dcb5275b57278f",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.WinForms/AnalysisForm.Designer.cs": {
+    "mtime": 1793879406.3228734,
+    "seen": 1793879411.6143548,
+    "ast_hash": "6ed80192fbc6d16cb43f64debb9a918b",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.WinForms/AnalysisForm.cs": {
+    "mtime": 1793879406.3230705,
+    "seen": 1793879411.614356,
+    "ast_hash": "8a5898be0104c0a42a63241ee4e66932",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.WinForms/MainForm.Designer.cs": {
+    "mtime": 1793879406.3230705,
+    "seen": 1793879411.614357,
+    "ast_hash": "e426fc787a384c528ef63a9b658ce90c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.WinForms/MainForm.cs": {
+    "mtime": 1793879406.3230705,
+    "seen": 1793879411.614358,
+    "ast_hash": "47861bc4269665daf9fcb76c98e1b5d0",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.WinForms/OrganLens.Legacy.WinForms.csproj": {
+    "mtime": 1793879406.3230705,
+    "seen": 1793879411.6143591,
+    "ast_hash": "7569b60f0aa396653913e3c2bc82951c",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Legacy.WinForms/Program.cs": {
+    "mtime": 1793879406.3230705,
+    "seen": 1793879411.61436,
+    "ast_hash": "9a4cfd2b78833d5e8c676e9592f8107a",
+    "semantic_hash": ""
+  },
+  "tests/e2e/package.json": {
+    "mtime": 1793879406.3232908,
+    "seen": 1793879411.614361,
+    "ast_hash": "f3c574fafaa0ea6506d5f391f4b57b80",
+    "semantic_hash": ""
+  },
+  "tests/e2e/playwright.config.ts": {
+    "mtime": 1793879406.3232908,
+    "seen": 1793879411.614362,
+    "ast_hash": "3cb631309486f0dafb837f46ad7f69cb",
+    "semantic_hash": ""
+  },
+  "tests/e2e/tests/study-list.spec.ts": {
+    "mtime": 1793879406.3232908,
+    "seen": 1793879411.6143632,
+    "ast_hash": "72892ed64638ba82c5a702252e1bf410",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1793879406.3187816,
+    "seen": 1793879411.6143641,
+    "ast_hash": "801a305528a2ab48c4959d18f2c8beab",
+    "semantic_hash": ""
+  },
+  "docs/api-contract.md": {
+    "mtime": 1793879406.3187816,
+    "seen": 1793879411.614365,
+    "ast_hash": "e69356dad12535dd3f75d6225cd84687",
+    "semantic_hash": ""
+  },
+  "docs/domain-glossary.md": {
+    "mtime": 1793879406.320319,
+    "seen": 1793879411.6143663,
+    "ast_hash": "b11c20832d4e4da7a14b5890b0d919ee",
+    "semantic_hash": ""
+  },
+  "src/OrganLens.Api/wwwroot/index.html": {
+    "mtime": 1793879406.3223798,
+    "seen": 1793879411.6143675,
+    "ast_hash": "346bae5a2126f61e51b83d56a6716834",
+    "semantic_hash": ""
+  },
+  "tests/e2e/README.md": {
+    "mtime": 1793879406.323259,
+    "seen": 1793879411.6143684,
+    "ast_hash": "ce2f57ce336b033c40abceaf1bfac9bf",
+    "semantic_hash": ""
+  }
+}
