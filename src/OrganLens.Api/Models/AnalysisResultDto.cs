@@ -7,6 +7,9 @@ public class AnalysisResultDto
     public List<MeasurementValueDto> Measurements { get; set; } = new();
     public List<FindingDto> Findings { get; set; } = new();
     public DateTime AnalyzedAtUtc { get; set; }
+
+    /// <summary>True when any finding's confidence is below Analysis:ReviewThreshold.</summary>
+    public bool RequiresReview { get; set; }
 }
 
 public class MeasurementValueDto

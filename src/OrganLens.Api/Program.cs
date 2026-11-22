@@ -9,6 +9,8 @@ builder.Services.AddProblemDetails();
 
 builder.Services.AddSingleton<IStudyStore>(_ => new InMemoryStudyStore(SeedData.Create()));
 builder.Services.AddSingleton(AnalyzerRegistry.CreateDefault());
+builder.Services.Configure<AnalysisOptions>(builder.Configuration.GetSection(AnalysisOptions.SectionName));
+builder.Services.AddSingleton<ReviewPolicy>();
 builder.Services.AddScoped<StudyService>();
 builder.Services.AddScoped<AnalysisService>();
 builder.Services.AddScoped<MeasurementService>();

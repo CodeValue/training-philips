@@ -8,12 +8,14 @@ public class AnalysisService
 {
     private readonly AnalyzerRegistry _registry;
     private readonly IStudyStore _store;
+    private readonly ReviewPolicy _reviewPolicy;
     private readonly ILogger<AnalysisService> _logger;
 
-    public AnalysisService(AnalyzerRegistry registry, IStudyStore store, ILogger<AnalysisService> logger)
+    public AnalysisService(AnalyzerRegistry registry, IStudyStore store, ReviewPolicy reviewPolicy, ILogger<AnalysisService> logger)
     {
         _registry = registry;
         _store = store;
+        _reviewPolicy = reviewPolicy;
         _logger = logger;
     }
 
@@ -28,11 +30,12 @@ public class AnalysisService
         return ToDto(study.Id, result);
     }
 
-    private static AnalysisResultDto ToDto(string studyId, AnalysisResult result)
+    private AnalysisResultDto ToDto(string studyId, AnalysisResult result)
     {
         return new AnalysisResultDto
         {
             StudyId = studyId,
+            RequiresReview = _reviewPolicy.RequiresReview(result.Findings),
             Organ = result.Organ.ToString(),
             AnalyzedAtUtc = result.AnalyzedAtUtc,
             Measurements = result.Measurements.Select(m => new MeasurementValueDto
